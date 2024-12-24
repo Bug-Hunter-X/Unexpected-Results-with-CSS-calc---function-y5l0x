@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+.container {
+  width: calc(50% + 20px);
+  /*Correct Usage of calc()*/
+  height: calc(100vh - 100px);
+}
+
+.element {
+  width: calc( (100% - 20px) / 3 );
+  /* Corrected nesting and consistent units */
+}
+
+/*Avoid this kind of nesting*/
+/*.element {
+  width: calc(calc(100% - 20px) / 3);
+}*/
+
+/*Avoid mixing of units*/
+/*.element {
+  width: calc(100% - 20px);
+}*/
